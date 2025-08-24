@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.about-section {
+  padding: 60px 20px;
+  background: var(--color-surface);
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text);
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-container h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--color-primary-light);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.about-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.about-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--color-primary-dark);
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary-light);
+}
+
+.extra-section {
+  /* margin: 30px 0; */
+  text-align: left;
+}
+
+.extra-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.extra-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+.extra-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-section ul li {
+  margin: 10px 0;
+  font-size: 1.05rem;
+  color: var(--color-text);
+  padding-left: 25px;
+  position: relative;
+}
+
+.extra-section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary-dark);
+  font-weight: bold;
+}

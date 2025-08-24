@@ -1,0 +1,52 @@
+:root {
+    /* Primary (your gradient theme) */
+    --color-primary: #055e57;
+    --color-primary-light: #2ba55a;
+    --color-primary-light-2: #72ff78;
+    --color-primary-light-3: #cdffcf;
+    --color-primary-dark: #0b786f;
+    --color-primary-dark-2: #112523;
+
+    --color-btn-gradient-start: #43a047;
+    /* leafy green */
+    --color-btn-gradient-end: #00c853;
+    /* emerald */
+
+    /* Neutral (light mode) */
+    --color-bg: #ffffff;
+    --color-surface: #f9f9f9;
+    --color-text: #1a1a1a;
+    --color-text-light: #444444;
+    --color-border: #e0e0e0;
+
+    /* Accent colors (green theme) */
+    --color-accent: #43a047;
+    /* leafy green */
+    --color-accent-2: #136d38;
+    /* vibrant emerald */
+    --color-accent-3: #76ff03;
+    /* lime / neon green */
+
+
+    /* Success / Warning / Error */
+    --color-success: #4caf50;
+    --color-warning: #ffc107;
+    --color-error: #f44336;
+}
+
+/* 🌙 Dark Mode */
+[data-theme="dark"] {
+    --color-bg: #121212;
+    --color-surface: #1e1e1e;
+    --color-text: #f5f5f5;
+    --color-text-light: #cfcfcf;
+    --color-border: #333333;
+}
+.upper-navbar{
+    justify-content: center;
+}
+.upper-navbar h1{
+    font-family: "poppins", "sans-serif";
+    font-size: 26px;
+    color: var(--color-primary);
+}
